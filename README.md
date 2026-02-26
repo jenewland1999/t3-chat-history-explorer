@@ -6,7 +6,9 @@ A small Bun CLI tool for searching [T3 Chat](https://t3.chat) export files by ti
 
 I needed to find a specific thread in T3 Chat and knew roughly when I had sent it, but the in-product search wasn't enough to locate it quickly.
 
-So I generated this CLI with GitHub Copilot to scan exported chat history by date/time window and surface likely threads. Ironically, the thread I was looking for turned out to be pinned all along, but the tool still solved the original problem and remains useful for future lookups.
+So I generated this CLI with GitHub Copilot to scan exported chat history by date/time window and surface likely threads.
+
+Ironically, the thread I was looking for turned out to be pinned all along, but the tool still solved the original problem and remains useful for future lookups. 🤦🏻‍♂️
 
 ## Built with
 
