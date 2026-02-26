@@ -1,0 +1,47 @@
+name: Bug report
+description: Report a reproducible problem with the CLI
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Clear description of the bug.
+      placeholder: The CLI returned no threads for a known valid time window.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command used.
+      placeholder: |
+        1. Run bun run start --file ... --from ... --to ...
+        2. Observe output
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: It should list the matching thread.
+    validations:
+      required: true
+  - type: input
+    id: bun_version
+    attributes:
+      label: Bun version
+      placeholder: bun --version
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add logs or anything else useful.
