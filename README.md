@@ -1,6 +1,6 @@
 # T3 Chat History Explorer
 
-A small Bun CLI tool for searching T3 Chat export files by time range (with optional text filtering).
+A small Bun CLI tool for searching [T3 Chat](https://t3.chat) export files by time range (with optional text filtering).
 
 ## Why I created this
 
