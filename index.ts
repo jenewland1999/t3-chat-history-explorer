@@ -49,7 +49,7 @@ type CliOptions = {
 
 function printUsage(): void {
   console.log(
-    `\nT3 chat history explorer (Bun + streaming JSON)\n\nUsage:\n  bun run index.ts --file <export.json> [--from <ISO|ms>] [--to <ISO|ms>] [--limit <n>] [--contains <text>]\n\nExamples:\n  bun run index.ts --file threads-export-2026-02-26T12_07_18.856Z.json --from 2026-02-25T09:00:00+10:00 --to 2026-02-25T11:00:00+10:00\n  bun run index.ts --file threads-export-2026-02-26T12_07_18.856Z.json --from 1769990400000 --to 1770076800000 --limit 100\n\nNotes:\n  - Time values are unix epoch milliseconds internally.\n  - If no --from/--to is provided, the script prints most recent threads by activity.\n`,
+    `\nT3 chat history explorer (Bun + streaming JSON)\n\nUsage:\n  bun run index.ts --file <export.json> [--from <ISO|ms>] [--to <ISO|ms>] [--limit <n>] [--contains <text>]\n\nExamples:\n  bun run index.ts --file threads-export.json --from 2026-02-25T09:00:00+10:00 --to 2026-02-25T11:00:00+10:00\n  bun run index.ts --file threads-export.json --from 1769990400000 --to 1770076800000 --limit 100\n\nNotes:\n  - Time values are unix epoch milliseconds internally.\n  - If no --from/--to is provided, the script prints most recent threads by activity.\n`,
   );
 }
 
@@ -76,7 +76,7 @@ export function parseArgs(argv: string[]): CliOptions {
     process.exit(0);
   }
 
-  const file = get("--file") ?? "threads-export-2026-02-26T12_07_18.856Z.json";
+  const file = get("--file") ?? "threads-export.json";
   const from = parseTime(get("--from"));
   const to = parseTime(get("--to"));
   const limitRaw = get("--limit");

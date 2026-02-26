@@ -24,7 +24,7 @@ describe("parseTime", () => {
 describe("parseArgs", () => {
   test("applies defaults", () => {
     const options = parseArgs([]);
-    expect(options.file).toBe("threads-export-2026-02-26T12_07_18.856Z.json");
+    expect(options.file).toBe("threads-export.json");
     expect(options.limit).toBe(50);
     expect(options.from).toBeUndefined();
     expect(options.to).toBeUndefined();

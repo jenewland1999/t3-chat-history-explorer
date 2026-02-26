@@ -32,7 +32,7 @@ bun install
 ### 3) Run the CLI
 
 ```bash
-bun run start --file threads-export-2026-02-26T12_07_18.856Z.json \
+bun run start --file threads-export.json \
  --from 2026-02-25T09:00:00+10:00 \
  --to 2026-02-25T11:00:00+10:00 \
  --limit 100
@@ -53,7 +53,7 @@ bun run start --file <export.json> [--from <ISO|ms>] [--to <ISO|ms>] [--limit <n
 Example with text filtering:
 
 ```bash
-bun run start --file threads-export-2026-02-26T12_07_18.856Z.json \
+bun run start --file threads-export.json \
  --from 2026-02-25T09:00:00+10:00 \
  --to 2026-02-25T11:00:00+10:00 \
  --contains "keyword"
